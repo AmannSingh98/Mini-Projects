@@ -1,0 +1,12 @@
+.star {
+  cursor: pointer;
+  font-size: 35px;
+  transition: color 0.2s;
+}
+.star.selected {
+  color: #ffd43b;
+}
+
+.star.unselected {
+  color: white;
+}
