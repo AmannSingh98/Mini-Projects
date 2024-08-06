@@ -1,0 +1,51 @@
+.popScreenContainer {
+  position: relative;
+}
+
+.popButton {
+  border-radius: 10px;
+  padding: 10px 15px;
+  border: 0;
+  font-size: 20px;
+  font-family: cursive;
+}
+
+.popButton:hover {
+  cursor: pointer;
+}
+
+.popButton:focus {
+  outline: none;
+}
+
+.popViewContainer {
+  position: absolute;
+  top: 0;
+  transform: translate(80%, -20%);
+  padding: 10px 15px;
+  border: 0;
+  border-radius: 20px;
+  background-color: khaki;
+  white-space: nowrap;
+}
+
+.popViewContainer p {
+  margin: 0;
+}
+
+.closeButton {
+  margin-top: 10px;
+  border-radius: 10px;
+  padding: 5px 10px;
+  border: 0;
+  font-size: 15px;
+  font-family: cursive;
+}
+
+.closeButton:hover {
+  cursor: pointer;
+}
+
+.closeButton:focus {
+  outline: none;
+}
