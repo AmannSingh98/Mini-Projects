@@ -46,9 +46,18 @@
   margin: 0;
 }
 
+.itemContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
 .itemName {
   font-size: 20px;
   font-weight: 400;
   font-family: cursive;
-  margin: 0;
+  margin-right: 20px;
+}
+
+.deleteIcon:hover {
+  cursor: pointer;
 }

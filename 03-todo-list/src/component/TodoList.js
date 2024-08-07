@@ -1,5 +1,7 @@
 import React, { useState } from 'react'
 import './TodoList.css'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faTrash } from '@fortawesome/free-solid-svg-icons'
 
 const TodoList = () => {
   const [itemName, setItemName] = useState('')
@@ -16,6 +18,11 @@ const TodoList = () => {
     }
     setList([...list, itemName])
     setItemName('')
+  }
+
+  const handleDelete = (itemName) => {
+    const newList = list.filter((item) => item !== itemName)
+    setList(newList)
   }
 
   return (
@@ -36,9 +43,16 @@ const TodoList = () => {
         <hr />
         {list.map((item, index) => {
           return (
-            <h3 className="itemName" key={index}>
-              {index + 1}. {item}
-            </h3>
+            <div className="itemContainer">
+              <span className="itemName" key={index}>
+                :: {item}
+              </span>
+              <FontAwesomeIcon
+                icon={faTrash}
+                className="deleteIcon"
+                onClick={() => handleDelete(item)}
+              />
+            </div>
           )
         })}
       </div>
