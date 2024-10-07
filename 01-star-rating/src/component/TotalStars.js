@@ -1,9 +1,9 @@
-import Star from './Star';
-import { useState } from 'react';
+import Star from './Star'
+import { useState } from 'react'
 
 const TotalStars = () => {
-  const [rating, setRating] = useState(0);
-  const [hoverValue, setHoverValue] = useState(0);
+  const [rating, setRating] = useState(0)
+  const [hoverValue, setHoverValue] = useState(0)
   return Array.from({ length: 5 }, (_, index) => {
     return (
       <>
@@ -15,8 +15,8 @@ const TotalStars = () => {
           onMouseOut={() => setHoverValue(0)}
         />
       </>
-    );
-  });
-};
+    )
+  })
+}
 
-export default TotalStars;
+export default TotalStars

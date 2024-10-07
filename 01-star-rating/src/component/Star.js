@@ -1,9 +1,8 @@
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faStar } from '@fortawesome/free-solid-svg-icons';
-import './Star.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faStar } from '@fortawesome/free-solid-svg-icons'
+import './Star.css'
 
 const Star = ({ selected, onClick, onMouseOver, onMouseOut }) => {
-  console.log(selected);
   return (
     <FontAwesomeIcon
       icon={faStar}
@@ -12,7 +11,7 @@ const Star = ({ selected, onClick, onMouseOver, onMouseOut }) => {
       onMouseOver={onMouseOver}
       onMouseOut={onMouseOut}
     />
-  );
-};
+  )
+}
 
-export default Star;
+export default Star
