@@ -1,0 +1,44 @@
+.clock {
+  width: 200px;
+  height: 200px;
+  border: 4px solid grey;
+  border-radius: 50%;
+  position: relative;
+  background-color: wheat;
+  transition: all 5s;
+}
+
+.mark {
+  left: 50%;
+  position: absolute;
+  width: 4px;
+  height: 10px; /* Length of the clock mark */
+  background-color: black;
+  transform-origin: left 100px;
+}
+
+.hand {
+  position: absolute;
+  transform-origin: bottom;
+  left: 50%;
+  bottom: 50%;
+  background-color: rgb(193, 20, 20);
+}
+
+.hour-hand {
+  height: 50px;
+  width: 6px;
+  background-color: red;
+}
+
+.minute-hand {
+  height: 70px;
+  width: 6px;
+  background-color: greenyellow;
+}
+
+.second-hand {
+  width: 6px;
+  height: 88px;
+  background-color: yellow;
+}
