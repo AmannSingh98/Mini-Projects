@@ -1,0 +1,33 @@
+.nav-section {
+  cursor: pointer;
+  transition: padding 0.3s ease;
+}
+
+.nav-section:hover {
+  /* border: 1px solid black; */
+  background-color: var(--hover-bg);
+  padding: 0.8rem 0.5rem;
+  border-radius: 1rem;
+}
+
+.nav-section .span {
+  font-size: 16px;
+  font-family: var(--font-family);
+  font-weight: 400;
+  text-decoration: none;
+  color: black;
+}
+
+.active {
+  background-color: var(--hover-bg);
+  padding: 0.8rem 0.5rem;
+  border-radius: 1rem;
+}
+
+@media (max-width: 575px) {
+  .nav-section {
+    transition: padding 0.3s ease;
+    width: 100%;
+    text-align: center;
+  }
+}

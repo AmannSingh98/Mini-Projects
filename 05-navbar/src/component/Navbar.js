@@ -6,8 +6,20 @@ import { Link } from 'react-router-dom'
 const Navbar = () => {
   const [toggle, setToggle] = useState(false)
   useEffect(() => {
-    if (window.innerWidth > 768) setToggle(false)
-  }, [window.innerWidth])
+    const handleResize = () => {
+      if (window.innerWidth > 575) {
+        setToggle(false)
+        console.log('toggling the bar', window.innerWidth)
+      }
+    }
+
+    window.addEventListener('resize', handleResize)
+
+    return () => {
+      window.removeEventListener('resize', handleResize)
+    }
+  }, [])
+
   return (
     <header>
       <nav>
