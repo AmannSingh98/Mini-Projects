@@ -1,0 +1,33 @@
+input {
+  display: none;
+}
+
+.toggle-checkbox {
+  position: relative;
+  width: 80px;
+  height: 40px;
+  background-color: var(--toggle-button-color);
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-color 0.25s;
+}
+
+.icon {
+  position: absolute;
+  border-radius: 50%;
+  top: 50%;
+  left: 3px;
+  transform: translate(0, -50%);
+}
+
+.moon,
+.sun {
+  height: 30px;
+  width: 30px;
+  transition: transform 0.75s;
+}
+
+.sun {
+  color: orange;
+  transform: translateX(40px);
+}
